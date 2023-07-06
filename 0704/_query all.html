@@ -16,6 +16,11 @@
     <p class="hello">Helloo</p>
     <p class="hello">봉쥬르</p>
   </div>
+  <ul id="skip-list">
+    <li id="skip-item">cat</li>
+    <li id="skip-item">wolf</li>
+    <li id="skip-item">puppy</li>
+  </ul>
   <script>
   //document.querySelectorAll('.hello')[0].innerHTML = 'hello'
  // document.querySelectorAll('.hello')[2].innerHTML = 'hello'
@@ -25,15 +30,19 @@
 //hello.forEach(function (changeColor) {
  // changeColor.style.color = 'yellow'
 
+$(document).ready(function() {
+  $skip-item.next().css('background','green');
+})
 
 //})
-$('.hello').html('JQuery!');
-$('.hello').css("color","#ff00ff");
-let names = ['스코티쉬폴드','샴','브리티쉬숏헤어','삼색고양이','래그돌']
-names.forEach(function(name) {
-  document.write(`<h1>${name}</h1>`);
-  document.write('<h2>' + name + '</h2>')
-})//제이쿼리에서는 반복문+배열을 할때는 위의 공식을 이용하면 하면 된다.//
+//$('.hello').html('JQuery!');
+//$('.hello').css("color","#ff00ff");
+//let names = ['스코티쉬폴드','샴','브리티쉬숏헤어','삼색고양이','래그돌']
+
+  //document.write(`<h1>${name}</h1>`);
+//document.write('<h2>' + name + '</h2>')})
+//제이쿼리에서는 반복문+배열을 할때는 위의 공식을 이용하면 하면 된다.//
+
 
   </script>
 </body>

@@ -15,12 +15,16 @@ header{
   background-color: #333;
 }
 .GitHub-menulist{
-  /*background-color: rgb(255, 255, 255);*/
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   width: 280px;
+  transform: translate(1000px,50px);
+ 
   
 }
 .GitHub-menuitem{
+  padding: 10px 0;
+  list-style: none;
   
  
 }
@@ -41,8 +45,14 @@ header{
 }
 .profile{
  position: relative;
-transform: translate(940px,50px);
+transform: translate(1495px,50px);
 }
-  
+#triangle{
+background-color: #fff;
+width: 0;
+height: 0;
+border-left: 50px soil transparent;
+
+}  
 
 
