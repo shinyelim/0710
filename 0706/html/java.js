@@ -4,7 +4,9 @@
 let dropdownBtn = document.querySelector('.dropdown-btn');
 let dropdowMenu = document.querySelector('.dropdown-menu ');
 console.log(dropdownBtn,dropdowMenu )
-dropdownBtn.addEventListener('click',function () {
+dropdownBtn.addEventListener('click',function (e) {
+  e.preventDefault();//a태그를 쓸경우에는 함수(e) e.preventDefault();을 쓰면됨//
   dropdowMenu.classList.toggle('active');
 })
+
 //프로필사진을 클릭하면 메뉴판이 생겨나다 사라지는 기능이다.//
