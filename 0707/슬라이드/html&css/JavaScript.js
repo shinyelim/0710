@@ -9,16 +9,16 @@ let slideList = document.querySelector('.slide-List');
 
 //console.log(btn1,btn2,btn3)
 btn1.addEventListener('click', function () {
-  slideList.style.transform = "translateX(0)"
+  slideList.style.transform = 'translateX(0)'
 })
 btn2.addEventListener('click', function () {
-  slideList.style.transform = "translateX(-100vw)"
+  slideList.style.transform = 'translateX(-100vw)'
 })
 //btn3.addEventListener('click', function () {
   //slideList.style.transform = 'translateX(-200vw)'
 //})
 btn3.addEventListener('click', function () {
-  slideList.style.transform = "translateX(-200vw)"
+  slideList.style.transform = 'translateX(-200vw)'
 })
 //콜백함수말고 다른함수로 하는방식
 /*function bt1() {
