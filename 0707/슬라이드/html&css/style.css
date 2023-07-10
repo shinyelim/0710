@@ -1,0 +1,82 @@
+
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+li {
+  list-style: none;
+}
+.wrapper{
+  position: relative;
+  
+
+}
+.slide-wrapper {
+  
+  max-height: 100vh;
+  max-width: 100vw;
+
+
+}
+
+.slide-list {
+
+  display: flex;
+  /* viewport width * 3(이미지 수) */
+    width: 300vw;
+    height: 100vh; 
+
+    transform: translateX(-200vw);
+    transition: transform 1s; 
+}
+
+.slide-list li {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.slide-list li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.btn-group {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%);
+ /* display: flex;
+  justify-content: center;
+  margin-top: 10px;*/
+ 
+}
+
+.btn-group button {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  /*border: 2px solid #000;*/
+  border-radius: 50%;
+  z-index: 1;
+  color:  #428CC6
+
+}
+
+.btn-group button:last-child {
+  margin-right: 0;
+}
+.btn-group button.active{
+  background-color: blueviolet;
+}
+
+
+
+
